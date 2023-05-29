@@ -123,5 +123,99 @@
         <td>Deportes</td>
         </tr>
     </table>
+
+    <!-- Vínculos HTML
+    Crear marcadores en html:
+
+    -->
+    <hr>
+    <a href="#parrrafito3">Parrafito 3</a>
+    <br>
+    <a href="/html/login.html">Inicia Sesión</a>
+    <br>
+    <a href="/html/login.html#p4">Mira el párrafo 4 del Login</a>
+
+    <p id="parrafito1">  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatibus eum, harum minima, pariatur aliquid distinctio dignissimos tempora cumque repellat, sunt totam laborum autem doloribus ducimus. Nisi asperiores ipsa reprehenderit!</p>
+    <br>
+    <p id="parrafito2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minima quibusdam, consectetur culpa commodi dolor cupiditate ut cum consequatur recusandae est sit magni ex reprehenderit ipsum dolores fuga! Voluptatem, commodi.</p>
+    <br>
+    <p id="parrafito3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum possimus nam sit cum distinctio. Voluptatem quasi recusandae error atque voluptatibus! Blanditiis vero ab voluptas? Ad odio rem quisquam modi assumenda?</p>
+
+    <!--Formularios de HTML -->
+    <br>
+    <form>
+        <label class="form1" for="user"> Nombre de usuario</label>
+        <input class="form1" type="text" id="user">
+        <br>
+    </form>
+    <form>
+        <label for="password"> Password</label>
+        <input type="password" id="password" name="password">
+        <br>
+        <label for="edad">Escribe tu edad: </label>
+        <input type="number" id="edad" name="edad" min="5" max="10">
+        <br> <br>
+        <label for="correo">Introduce tu email</label>
+        <input type="email" id="correo" name="correo">
+        <br><br>
+        <label for="Comentarios">Escribe un comentario</label>
+        <textarea name="Comentarios" id=Comentarios"" placeholder="Máximo 10 palabras"></textarea>
+        <br><br>
+        <label for="nacimiento">Selecciona tu fecha de nacimiento</label>
+        <input type="date" id="nacimiento" name="nacimiento">
+        <br><br>
+        <p>Elige tu lenguaje fav</p>
+        <input type="radio" id="java" name="lenguaje_fav" value="java">
+        <label for="java">Java</label> <br>
+        <input type="radio" id="Javascript" name="lenguaje_fav" value="Javascript">
+        <label for="Javascript">Javascript</label> <br>
+        <input type="radio" name="lenguaje_fav" id="Python" value="Python">
+        <label for="Python">Python</label> <br>
+        <!-- Define una casilla de verificación donde el usuario puede seleccionar 0 o más opciones de un número limitado de opciones. -->
+        <br> <br>
+        <p>Selecciona los idiomas que hablas</p> <br>
+        <input type="checkbox" id="idioma1" name="idioma2" value="spanish"> 
+        <label for="idioma2">Español</label>
+        <br>    
+        <input type="checkbox" id="idioma1" name="idioma3" value="french"> 
+        <label for="idioma3">Francés</label>
+        <br> <br>
+        <!-- Seleccionar archivo -->
+        <label for="miarchivo">Agrega un archivo pdf</label>
+        <input type="file" id="miarchivo" name="miarchivo">
+        <!-- Diseñar un formulario de registro para una página de videojuegos. ¿Qué necesitamos?
+        Todos los campos deben ser obligatorios:
+        - Nombre: "text"
+        - Apellido: "text"
+        - nombre de usuario: "text"
+        - Correo electrónico: "email"
+        - edad (mínimo 18 años): "number"
+        - Contraseña: "password"
+        - Botón que diga "Registrarse"
+        - Botón que diga "Limpiar formulario" -->
+    <hr>
+    <form action="/action_page.php" method="get" target="_blank">
+        <label for="nombre"> Nombre: </label>
+        <input required type="text" id="nombre">
+        <br> <br>
+        <label for="apellido"> Apellido: </label>
+        <input required type="text" id="apellido">
+        <br> <br>
+        <label for="user"> Nombre de usuario: </label>
+        <input required type="text" id="user">
+        <br> <br>
+        <label for="correo">Introduce tu email</label>
+        <input required type="email" id="correo" name="correo">
+        <br><br>
+        <label for="edad">Escribe tu edad: </label>
+        <input required type="number" id="edad" name="edad" min="18" max="90">
+        <br> <br>
+        <label for="password"> Password</label>
+        <input required type="password" id="password" name="password">
+        <br> <br>
+        <button type="submit">Registrarse</button>
+        <button type="reset">Limpiar Formulario</button>
+    </form>
+    </form>
 </body>
 </html>
